@@ -1,0 +1,43 @@
+
+$border: 1px solid black;
+
+.container {
+    width: 100%;
+}
+
+.timeline-element {
+    position: relative;
+    width: 40%;
+    border: $border;
+    margin: 1rem 0rem;
+    &:nth-child(even) {
+        position: relative;
+        left: 55%;
+        &::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                border-right: 5px solid green;
+                height: 100vh;
+                top: 0;
+                bottom: 0; 
+                right: 112.5%;
+       }
+    }
+    &:nth-child(odd) {
+        position: relative;
+        left: 4.4%;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            border-right: 5px solid green;
+            height: 100vh;
+            top: 0;
+            bottom: 0;
+            left: 112.5%;
+        }
+    }
+
+}
+

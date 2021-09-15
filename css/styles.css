@@ -1,3 +1,40 @@
+.container {
+  width: 100%;
+}
 
+.timeline-element {
+  position: relative;
+  width: 40%;
+  border: 1px solid black;
+  margin: 1rem 0rem;
+}
+.timeline-element:nth-child(even) {
+  position: relative;
+  left: 55%;
+}
+.timeline-element:nth-child(even)::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-right: 5px solid green;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 112.5%;
+}
+.timeline-element:nth-child(odd) {
+  position: relative;
+  left: 4.4%;
+}
+.timeline-element:nth-child(odd)::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-right: 5px solid green;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 112.5%;
+}
 
 /*# sourceMappingURL=styles.css.map */
