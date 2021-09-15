@@ -1,14 +1,16 @@
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   width: 100%;
   border: 1px solid purple;
+  color: white;
 }
 
 .timeline {
   margin: auto;
   position: relative;
   border: 3px solid orange;
+  margin: 4rem 0rem;
 }
 
 .timeline::before {
@@ -25,17 +27,26 @@
   text-align: right;
   position: relative;
 }
-.right * {
-  text-align: left;
-}
 .right::before {
   content: "";
   position: absolute;
   border-style: solid;
   border-width: 20px 30px 20px 0px;
   border-color: transparent black transparent transparent;
-  right: 420px;
-  top: 20px;
+  right: 480px;
+  top: 75px;
+}
+.right .timeline-element {
+  margin: 2rem 2rem 2rem 0rem;
+}
+.right * {
+  text-align: left;
+}
+.right h1 {
+  background-image: url("/images/phish.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
 }
 
 .left {
@@ -49,14 +60,26 @@
   border-style: solid;
   border-width: 20px 0px 20px 30px;
   border-color: transparent transparent transparent black;
-  left: 420px;
-  top: 20px;
+  left: 480px;
+  top: 75px;
+}
+.left .timeline-element {
+  margin: 2rem 0rem 2rem 2rem;
 }
 
 .timeline-element {
   display: inline-block;
   width: 25rem;
-  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #2C6E91;
+}
+
+@media screen and (max-width: 975px) {
+  .timeline-element {
+    background-color: #2C6E91;
+    width: 20rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
