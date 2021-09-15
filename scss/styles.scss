@@ -1,8 +1,24 @@
+$phishRed: #F15A50;
+$phishBlue: #2C6E91;
+
 
 @mixin border {
     $border: 3rem solid black;
     border-radius: 1rem;
 }
+
+@mixin circle {
+        background: white;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        vertical-align: middle;
+        padding: 15px;
+    }
+
+
 
 .container {
     max-width: 1200px;
@@ -17,23 +33,26 @@
     position: relative;
     border: 3px solid orange;
     margin: 4rem 0rem;
+    background-color: $phishBlue;
+
     
 }
 
 .timeline::before {
     content: "";
     position: absolute;
-    border-right: 4px solid red;
+    border-right: 8px solid $phishRed;
     display: inline-block;
-    width: 50%;
+    width: 49.5%;
     height: 100%;
 }
+
 
 .right {
     width: 100%;
     text-align: right;
     position: relative;
-    &::before {
+    &::after {
         content: "";
         position: absolute;
         border-style: solid;
@@ -51,8 +70,15 @@
     h1 {
         background-image: url('/images/phish.jpeg');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         height: 10rem;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        @include circle;
+        right: 518px;
+        top: 80px;
     }
 
 }
@@ -73,20 +99,28 @@
     .timeline-element {
         margin: 2rem 0rem 2rem 2rem;
     }
-}
+    &::before {
+            content: "";
+            position: absolute;
+            @include circle;
+            right: 518px;
+            top: 80px;
+        }
+    }
+
 
 .timeline-element {
     display: inline-block;
     width: 25rem;
     @include border;
     padding: 1.5rem;
-    background-color: #2C6E91;
+    background-color: $phishRed;
 
 }
 
 @media screen and (max-width: 975px) {
     .timeline-element {
-        background-color: #2C6E91;
+        background-color: $phishBlue;
         width: 20rem;
     }
 }
