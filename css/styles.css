@@ -338,5 +338,17 @@ h1 {
     margin: 2rem 1rem 2rem 0rem;
   }
 }
+@media screen and (max-width: 450px) {
+  .left::after {
+    left: 57px;
+  }
+  .left .date-box {
+    left: 87px;
+  }
+  .left blockquote::before {
+    left: 335px;
+    height: 6.8rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

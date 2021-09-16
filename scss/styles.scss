@@ -292,14 +292,15 @@ h1 {
             border-bottom-left-radius: 0rem;
             border-top-left-radius: 1rem;
             border-bottom-right-radius: 1rem;
-        } blockquote::before {
+        }
+        blockquote::before {
             left: 335px;
             height: 6.8rem;
         }
     }
     .right {
         &::after {
-            right:288px;
+            right: 288px;
         }
         &::before {
             content: "";
@@ -313,12 +314,29 @@ h1 {
             bottom: 12px;
             left: -20px;
             width: 17rem;
-
-        }        .date-box {
+        }
+        .date-box {
             right: 183px;
         }
         .timeline-element {
             margin: 2rem 1rem 2rem 0rem;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .left {
+
+        &::after {
+            left: 57px;
+        }
+        .date-box {
+            left: 87px;
+        }
+        blockquote::before {
+            left: 335px;
+            height: 6.8rem;
         }
     }
 }
