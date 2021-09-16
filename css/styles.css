@@ -167,4 +167,85 @@ h1 {
   border: none;
 }
 
+@media screen and (max-width: 1150px) {
+  .timeline-element {
+    width: 20rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .left::after {
+    left: 392px;
+  }
+  .left .date-box {
+    left: 290px;
+  }
+
+  .right::after {
+    right: 392px;
+  }
+  .right img {
+    height: 8rem;
+    bottom: 12px;
+    left: -20px;
+    width: 22.5rem;
+  }
+  .right .date-box {
+    right: 287px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .timeline-element {
+    width: 15rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .left::after {
+    left: 312px;
+  }
+  .left .date-box {
+    left: 210px;
+  }
+  .left::before {
+    content: "";
+    position: absolute;
+    background: #404791;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 15px;
+    right: 48.1%;
+    top: 80px;
+  }
+
+  .right::after {
+    right: 312px;
+  }
+  .right img {
+    height: 8rem;
+    bottom: 12px;
+    left: -20px;
+    width: 17.5rem;
+  }
+  .right .date-box {
+    right: 207px;
+  }
+  .right::before {
+    content: "";
+    position: absolute;
+    background: #404791;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 15px;
+    right: 48.1%;
+    top: 80px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
