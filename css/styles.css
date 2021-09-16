@@ -14,7 +14,7 @@ body {
   margin: auto;
   position: relative;
   border: 8px solid #fd8981;
-  background-color: #e6effc;
+  background-color: #eff4fc;
 }
 
 .timeline::before {
@@ -37,7 +37,7 @@ body {
   border-style: solid;
   border-width: 20px 30px 20px 0px;
   border-color: transparent #404791 transparent transparent;
-  right: 480px;
+  right: 488px;
   top: 75px;
 }
 .right .timeline-element {
@@ -104,7 +104,7 @@ body {
   border-style: solid;
   border-width: 20px 0px 20px 30px;
   border-color: transparent transparent transparent #404791;
-  left: 480px;
+  left: 488px;
   top: 75px;
 }
 .left .timeline-element {
@@ -136,6 +136,15 @@ body {
   border-bottom-left-radius: 1rem;
   font-weight: 900;
   border: 1px solid #fd8981;
+}
+
+blockquote::before {
+  content: "";
+  position: absolute;
+  border-right: 5px solid white;
+  display: inline-block;
+  left: 80px;
+  height: 3.5rem;
 }
 
 .timeline-element {

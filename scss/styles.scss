@@ -2,7 +2,7 @@
 
 $phishRed: #fd8981;
 $phishBlue: #404791;
-$phishWhite: #e6effc;
+$phishWhite: #eff4fc;
 $LobsterFont: "Lobster", cursive;
 $RalewayFont: 'Raleway', sans-serif;
 
@@ -59,7 +59,7 @@ body {
         border-style: solid;
         border-width: 20px 30px 20px 0px;
         border-color: transparent $phishBlue transparent transparent;
-        right: 480px;
+        right: 488px;
         top: 75px;
     }
     .timeline-element {
@@ -118,7 +118,7 @@ body {
         border-style: solid;
         border-width: 20px 0px 20px 30px;
         border-color: transparent transparent transparent $phishBlue;
-        left: 480px;
+        left: 488px;
         top: 75px;
     }
     .timeline-element {
@@ -144,6 +144,15 @@ body {
         font-weight: 900;
         border: 1px solid $phishRed;
     }
+}
+
+blockquote::before {
+    content: "";
+    position: absolute;
+    border-right: 5px solid white;
+    display: inline-block;
+    left: 80px;
+    height: 3.5rem;
 }
 
 .timeline-element {
