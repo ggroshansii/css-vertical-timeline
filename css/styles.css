@@ -20,7 +20,7 @@ body {
 .timeline::before {
   content: "";
   position: absolute;
-  border-right: 8px solid #fd8981;
+  border-right: 12px solid #fd8981;
   display: inline-block;
   width: 49.5%;
   height: 100%;
@@ -196,7 +196,6 @@ h1 {
 @media screen and (max-width: 920px) {
   .timeline-element {
     width: 15rem;
-    padding: 0.5rem 1rem;
   }
 
   .left::after {
@@ -245,6 +244,98 @@ h1 {
     padding: 15px;
     right: 48.1%;
     top: 80px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .timeline {
+    border: none;
+  }
+
+  .timeline::before {
+    width: 5%;
+    border-right: 8px solid #fd8981;
+  }
+
+  .timeline-element {
+    width: 14.5rem;
+  }
+
+  .left {
+    text-align: right;
+  }
+  .left .timeline-element {
+    margin: 2rem 1rem 2rem 0rem;
+  }
+  .left::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 30px 20px 0px;
+    border-color: transparent #404791 transparent transparent;
+    right: 312px;
+    top: 75px;
+  }
+  .left::before {
+    content: "";
+    position: absolute;
+    background: #404791;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 15px;
+    left: 2%;
+    top: 80px;
+  }
+  .left::after {
+    left: 82px;
+  }
+  .left .date-box {
+    left: 112px;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .left blockquote::before {
+    left: 335px;
+    height: 6.8rem;
+  }
+
+  .right::after {
+    right: 288px;
+  }
+  .right::before {
+    content: "";
+    position: absolute;
+    background: #404791;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 15px;
+    left: 2%;
+    top: 80px;
+  }
+  .right img {
+    height: 8rem;
+    bottom: 12px;
+    left: -20px;
+    width: 17rem;
+  }
+  .right .date-box {
+    right: 183px;
+  }
+  .right .timeline-element {
+    margin: 2rem 1rem 2rem 0rem;
   }
 }
 
