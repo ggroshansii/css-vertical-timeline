@@ -82,11 +82,17 @@ body {
         margin-bottom: 0px;
     }
     &::before {
-        content: "";
+        content: "\f7a6";
+        display: inline-block;
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        font-size: 1.5rem;
+        border-radius: 2rem;
         position: absolute;
-        @include circle;
-        right: 48.6%;
+        right: 48.2%;
         top: 80px;
+        background-color: #404791;
+        padding: 0.65rem;
     }
     .date-box {
         display: inline-block;
@@ -126,10 +132,16 @@ body {
         margin: 2rem 0rem 2rem 2rem;
     }
     &::before {
-        content: "";
+        content: "\f7a6";
+        display: inline-block;
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        font-size: 1.5rem;
+        border-radius: 2rem;
         position: absolute;
-        @include circle;
-        right: 48.6%;
+        background-color: #404791;
+        padding: 0.65rem;
+        right: 48.2%;
         top: 80px;
     }
     .date-box {
@@ -184,6 +196,9 @@ h1 {
         &::after {
             left: 392px;
         }
+        &::before {
+            right: 47.8%;
+        }
 
         .date-box {
             left: 290px;
@@ -192,6 +207,9 @@ h1 {
     .right {
         &::after {
             right: 392px;
+        }
+        &::before {
+            right: 47.8%;
         }
         img {
             height: 8rem;
@@ -218,10 +236,7 @@ h1 {
             left: 210px;
         }
         &::before {
-            content: "";
-            position: absolute;
-            @include circle;
-            right: 48.1%;
+            right: 47%;
             top: 80px;
         }
     }
@@ -239,10 +254,7 @@ h1 {
             right: 207px;
         }
         &::before {
-            content: "";
-            position: absolute;
-            @include circle;
-            right: 48.1%;
+            right: 47%;
             top: 80px;
         }
     }
@@ -277,11 +289,10 @@ h1 {
             top: 75px;
         }
         &::before {
-            content: "";
             position: absolute;
-            @include circle;
-            left: 2%;
+            right: 358px;
             top: 80px;
+            font-size: 1rem;
         }
         &::after {
             left: 82px;
@@ -303,11 +314,9 @@ h1 {
             right: 288px;
         }
         &::before {
-            content: "";
-            position: absolute;
-            @include circle;
-            left: 2%;
+            right: 358px;
             top: 80px;
+            font-size: 1rem;
         }
         img {
             height: 8rem;
